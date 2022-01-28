@@ -8,34 +8,23 @@
   </head>
   <body>
 
-    <div id="board">beep boop some kinda ascii map</div>
-
-
-
-
-    <div id="save">
-      <p>load</p>
-      <input type="text" id="blob"></input>
-      <button>play</button>
-      <p>playing as ?????? <a href="">switch</a></p> 
-    </div>
+    <div id="board"><br><br><br><br><br><br><br>beep boop some kinda ascii map</div>
 
     <div id="actions">
 
       <!-- in haus -->
-      <p>haus</p>
 
+      <h3>haus</h3>
       <ul>
+        <!-- wander -->
         <li><a href="">go outside</a></li>
         <li><a href="">go into caves</a></li>
-
-        <li><a href="">inventory</a> <!-- haus stuff -->
-
+        <!-- collection management -->
         <li><a href="">table</a></li> <!-- featured treasure -->
         <li><a href="">treasure</a></li> <!-- look at treasure -->
-
+        <li><a href="">inventory</a> <!-- haus stuff -->
+        <!-- haus verbs -->
         <li><a href="">smooch wofe</a></li> <!-- wofeSmooch count -->
-
         <li><a href="">tend worms</a></li> <!-- worm tech tree -->
         <li><a href="">make fire</a></li> <!-- fire tech tree -->
         <li><a href="">make water</a></li> <!-- water tech tree -->
@@ -43,19 +32,22 @@
 
       <!-- in caves -->
 
-      <p>cave</p>
-
-      <a href="">consult the worms</a> <!-- worm minigame -->
-      <a href="">explore the caves</a> <!-- cave minigame -->
+      <h3>cave</h3>
+      <ul>
+        <li><a href="">go inside</a></li>
+        <!-- cave verbs -->
+        <li><a href="">consult the worms</a></li> <!-- worm minigame -->
+        <li><a href="">explore the caves</a></li> <!-- cave minigame -->
+      </ul>
 
       <!-- outside -->
 
-      <p>outside</p>
-
-      <a href="">go inside</a>
-
-      <a href="">gather ingredients</a> <!-- gather minigame -->
-      <a href="">hunt for treasure</a> <!-- hunt minigame -->
+      <h3>outside</h3>
+      <ul>
+        <li><a href="">go inside</a></li>
+        <li><a href="">gather ingredients</a></li> <!-- gather minigame -->
+        <li><a href="">hunt for treasure</a></li> <!-- hunt minigame -->
+      </ul>
 
       <!-- inventory -->
 
@@ -69,6 +61,13 @@
 
     </div>
 
+
+  <div id="save">
+    <p>load</p>
+    <input type="text" id="blob"></input>
+    <button>play</button>
+    <p>playing as ?????? <a href="">switch</a></p> 
+  </div>
 
 <div id="save">
   <p>save</p>

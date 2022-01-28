@@ -12,10 +12,13 @@ a:visited {
   background-color: rgb(25,25,25);
   height: 2.5in;
   width: 3.5in;
+  border-style: double;
+  border-width: 4pt;
+  border-color: rgb(100,100,100);
+  text-align: center;
 }
 
-#blah {
-  background-color: silver;
-  height: 0.5in;
+#actions {
+  background-color: rgb(25,25,25);
   width: 3.5in;
 }
