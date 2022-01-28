@@ -3,78 +3,111 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>wormhaus</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
-    <div id="board"><br><br><br><br><br><br><br>beep boop some kinda ascii map</div>
+    <div id="wormhaus">
 
-    <div id="actions">
+      <div id="playarea">
+        <div id="board"><br><br><br><br><br><br><br>beep boop some kinda ascii map</div>
 
-      <!-- in haus -->
+        <div id="messages">
+          <p>session log of what you did</p>
+        </div>
+      </div>
 
-      <h3>haus</h3>
-      <ul>
-        <!-- wander -->
-        <li><a href="">go outside</a></li>
-        <li><a href="">go into caves</a></li>
-        <!-- collection management -->
-        <li><a href="">table</a></li> <!-- featured treasure -->
-        <li><a href="">treasure</a></li> <!-- look at treasure -->
-        <li><a href="">inventory</a> <!-- haus stuff -->
-        <!-- haus verbs -->
-        <li><a href="">smooch wofe</a></li> <!-- wofeSmooch count -->
-        <li><a href="">tend worms</a></li> <!-- worm tech tree -->
-        <li><a href="">make fire</a></li> <!-- fire tech tree -->
-        <li><a href="">make water</a></li> <!-- water tech tree -->
-      </ul>
+      <div id="actions">
 
-      <!-- in caves -->
+        <!-- in haus -->
 
-      <h3>cave</h3>
-      <ul>
-        <li><a href="">go inside</a></li>
-        <!-- cave verbs -->
-        <li><a href="">consult the worms</a></li> <!-- worm minigame -->
-        <li><a href="">explore the caves</a></li> <!-- cave minigame -->
-      </ul>
+        <h3>haus</h3>
+        <ul>
+          <!-- wander -->
+          <li><a href="">go outside</a></li>
+          <li><a href="">go into caves</a></li>
+          <!-- collection management -->
+          <li><a href="">table</a></li> <!-- featured treasure -->
+          <li><a href="">treasure</a></li> <!-- look at treasure -->
+          <li><a href="">pantry</a> <!-- haus stuff -->
+          <!-- haus verbs -->
+          <li><a href="">smooch wofe</a></li> <!-- wofeSmooch count -->
+          <li><a href="">tend worms</a></li> <!-- worm tech tree -->
+          <li><a href="">make fire</a></li> <!-- fire tech tree -->
+          <li><a href="">make water</a></li> <!-- water tech tree -->
+        </ul>
 
-      <!-- outside -->
+        <!-- in caves -->
 
-      <h3>outside</h3>
-      <ul>
-        <li><a href="">go inside</a></li>
-        <li><a href="">gather ingredients</a></li> <!-- gather minigame -->
-        <li><a href="">hunt for treasure</a></li> <!-- hunt minigame -->
-      </ul>
+        <h3>cave</h3>
+        <ul>
+          <li><a href="">go inside</a></li>
+          <!-- cave verbs -->
+          <li><a href="">consult the worms</a></li> <!-- worm minigame -->
+          <li><a href="">explore the caves</a></li> <!-- cave minigame -->
+        </ul>
 
-      <!-- inventory -->
+        <!-- outside -->
 
-      <p>list of what you got</p>
+        <h3>outside</h3>
+        <ul>
+          <li><a href="">go inside</a></li>
+          <li><a href="">gather ingredients</a></li> <!-- gather minigame -->
+          <li><a href="">hunt for treasure</a></li> <!-- hunt minigame -->
+        </ul>
 
-      <!-- stats -->
+        <!-- pantry -->
 
-      <p>#time in game</p>
-      <p>#wofeSmooch</p>
-      <p>worm stats - fire stats - water stats</p>
+        <div id="table">
+          <h3>table</h3>
+          <p>place to show things off</p>
+          <textarea>and pass notes</textarea>
+        </div>
+
+        <div id="treasure">
+          <h3>treasure</h3>
+          <p>list of what you got</p>
+        </div>
+
+        <div id="pantry">
+          <h3>pantry</h3>
+          <p>stuff in the haus</p>
+        </div>
+
+        <!-- stats -->
+
+        <div id="stats">
+          <h3>stats</h3>
+          <p>#time in game</p>
+          <p>#wofeSmooch</p>
+          <p>worm stats - fire stats - water stats</p>
+          <p>2-up columns for each</p>
+        </div>
+
+      </div>
+
+    <div id="menu">
+
+        <!-- game control -->
+        <div id="load">
+          <p>load</p>
+          <input type="text" id="blob"></input>
+          <button>play</button>
+          <p>playing as ?????? <a href="">switch</a></p> 
+        </div>
+
+        <div id="save">
+          <p>save</p>
+          <input type="text" id="blob"></input>
+          <button>copy</button>
+          <button>share</button>
+        </div>
+
+      </div>
 
     </div>
 
-
-  <div id="save">
-    <p>load</p>
-    <input type="text" id="blob"></input>
-    <button>play</button>
-    <p>playing as ?????? <a href="">switch</a></p> 
-  </div>
-
-<div id="save">
-  <p>save</p>
-  <input type="text" id="blob"></input>
-  <button>copy</button>
-  <button>share</button>
-</div>
 
     <script src="script.js"></script>
   </body>

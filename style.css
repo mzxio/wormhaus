@@ -2,10 +2,35 @@ body {
   background-color: black;
   color: white;
   font-family: monospace;
+  margin: 0;
 }
 
 a:visited {
   color: indianred;
+}
+
+#wormhaus {
+  max-width: 8in;
+  position: relative;
+}
+
+#playarea,
+#actions {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+#playarea {
+  width: 3.7in;
+  top: 0;
+  left: 0;
+}
+
+#actions {
+  width: 3in;
+  top: 0;
+  right: 0;
 }
 
 #board {
@@ -18,7 +43,11 @@ a:visited {
   text-align: center;
 }
 
-#actions {
+#messages {
   background-color: rgb(25,25,25);
+  color: rgb(100,100,100);
   width: 3.5in;
+  height: 1.5in;
+  box-sizing: border-box;
+  padding: 4pt 8pt;
 }
